@@ -19,7 +19,7 @@ ALLOWED_HOSTS = []
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
 INSTALLED_APPS = [
-    # Add your apps here to enable them
+    'TheApp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

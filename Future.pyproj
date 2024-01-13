@@ -44,12 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="TheApp\static\mainJS.js" />
+    <Content Include="TheApp\static\style.css" />
+    <Content Include="TheApp\templates\TheApp\base.html" />
     <Content Include="TheApp\templates\TheApp\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Future\" />
     <Folder Include="TheApp\" />
     <Folder Include="TheApp\migrations\" />
+    <Folder Include="TheApp\static\" />
     <Folder Include="TheApp\templates\" />
     <Folder Include="TheApp\templates\TheApp\" />
   </ItemGroup>
