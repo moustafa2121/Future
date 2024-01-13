@@ -8,7 +8,7 @@
     <!-- style sheets -->
     {% load static %}
     <link rel="stylesheet" href="static/style.css">
-    <script src="static/mainJS.js"></script>
+    <script src="static/mainJS.js" defer></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +17,16 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar-brand" href="#"><img src="static/FTlogo2.png" alt="FT logo"></a>
+            <a class="navbar-brand" href="/"><img src="static/FTlogo2.png" alt="FT logo"></a>
             <ul>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">ABOUT US</a>
+                    <a class="nav-link active" href="/about">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">HOW WE WORK</a>
+                    <a class="nav-link" href="/howwework">HOW WE WORK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROJECTS</a>
+                    <a class="nav-link" href="/projects">PROJECTS</a>
                 </li>
             </ul>
         </nav>
@@ -35,6 +35,12 @@
         {% block mainBodyContent %}
         {% endblock mainBodyContent %}
     </main>
-    <footer></footer>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <p class="col-md-4 mb-0">&#xa9; 2024 Future Solutions - All Rights Reserved</p>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Contract Us</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
