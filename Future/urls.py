@@ -4,6 +4,7 @@ from TheApp import views
 urlpatterns = [
    path('', views.index, name="index"),
    path('about', views.about, name="about"),
-   path('howwework', views.howWork, name="howWork"),
+   path('gallery', views.gallery, name="gallery"),
    path('projects', views.projects, name="projects"),
+   path('contact', views.contact, name="contact"),
 ]

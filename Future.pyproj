@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="TheApp\static\contactStyle.css" />
+    <Content Include="TheApp\static\galleryStyle.css" />
     <Content Include="TheApp\static\mainJS.js" />
     <Content Include="TheApp\static\projectsStyle.css" />
     <Content Include="TheApp\static\style.css" />
-    <Content Include="TheApp\templates\TheApp\howWork.html" />
+    <Content Include="TheApp\templates\TheApp\contact.html" />
+    <Content Include="TheApp\templates\TheApp\gallery.html" />
     <Content Include="TheApp\templates\TheApp\base.html" />
     <Content Include="TheApp\templates\TheApp\about.html" />
     <Content Include="TheApp\templates\TheApp\projects.html" />
