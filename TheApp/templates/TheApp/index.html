@@ -1,42 +1,76 @@
 {% extends 'TheApp/base.html' %}
-
-
 {% block mainBodyContent %}
-{{content}}
-<article class="mainPageArticle">
-    <div class="textContainer">
-        <h1>Who are we?</h1>
+
+<link rel="stylesheet" href="static/parallaxStyle.css">
+<div id="parallaxContainer">
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Who Are We?</span>
+        </div>
+    </div>
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Future Solutions</h3>
         <p>
-            Future Solutions was established in 2006 and is headquartered in Iraq.
+            The company was established in 2006 and is headquartered in Iraq.
+            We strive to become the leader in the region as an electrical contracting company and an approved provider for various markets (including the industrial and construction sectors) by providing the latest products and technologies and thus playing an important role in driving development in the region as a whole
         </p>
     </div>
-    <div class="imgContainer">
-        <img src='static/mainPage_1.jpg' class='alligator-turtle' />
-    </div>
-</article>
 
-<article class="mainPageArticle">
-    <div class="textContainer">
-        <h1>Our Mission</h1>
-        <p>
-            To become the leader in the region as an electrical contracting company and an approved provider for various markets (including the industrial and construction sectors) by providing the latest products and technologies and thus playing an important role in driving development in the region as a whole
-        </p>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">Our Vision</span>
+        </div>
     </div>
-    <div class="imgContainer">
-        <img src='static/mainPage_2.jpg' class='alligator-turtle' />
-    </div>
-</article>
 
-<article class="mainPageArticle">
-    <div class="textContainer">
-        <h1>Our Vision</h1>
-        <p>
-            Achieving the highest level of customer satisfaction, we are determined to have the highest level of flexibility through our certified products and services
-        </p>
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>
+                Achieving the highest level of customer satisfaction, we are determined to have the highest level of flexibility through our certified products and services
+            </p>
+        </div>
     </div>
-    <div class="imgContainer">
-        <img src='static/mainPage_3.png' class='alligator-turtle' />
-    </div>
-</article>
 
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border">
+                Areas Of Work
+            </span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>
+                The company has the technical capabilities and full experience to implement various engineering and processing activities. This is through its experience in the following fields:
+
+                <ul class="pulsing">
+                    <li>
+                        Supplying various types of electrical and mechanical equipment.
+                    </li>
+                    <li>
+                        Evaluating bids and preparing contracts.
+                    </li>
+                    <li>
+                        Field supervision.
+                    </li>
+                    <li>
+                        Starting operations in an integrated manner, including training specialized personnel.
+                    </li>
+                    <li>
+                        Providing various engineering services.
+                    </li>
+                    <li>
+                        Implementing modern systems.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <!--<div class="caption">
+            <span class="border">COOL!</span>
+        </div>-->
+    </div>
+</div>
 {% endblock mainBodyContent %}
