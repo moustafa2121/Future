@@ -27,3 +27,6 @@ os.environ.setdefault(
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
 application = get_wsgi_application()
+
+from Future.wsgi import TheApp
+application = TheApp(application)
