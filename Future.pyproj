@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="TheApp\static\aboutStyle.css" />
     <Content Include="TheApp\static\contactStyle.css" />
     <Content Include="TheApp\static\galleryStyle.css" />
     <Content Include="TheApp\static\mainJS.js" />

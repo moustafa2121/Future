@@ -1,0 +1,78 @@
+
+.aboutPageArticle {
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-bottom: 5px solid darkolivegreen;
+    margin: auto;
+    color: black;
+    width: 80vw;
+    font: "PP Right Grotesk", sans-serif font;
+    font-size: 1.2em;
+}
+
+.aboutPageArticle ul {
+    text-align: left;
+}
+.aboutPageArticle p, .gridContainer div p {
+    text-align: justify;
+}
+.aboutPageArticle h1, .gridContainer h3{
+    text-decoration:underline;
+    text-decoration-color:green;
+}
+
+.gridContainer {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    border-bottom: 1px solid black;
+}
+.gridContainer div {
+    display:inline-block;
+    padding: 10px; 
+}
+
+
+/* img animation */
+.imgContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgContainer > img {
+    margin: auto;
+    object-fit: cover;
+    object-position: 100% 0;
+    width: 0;
+    height: 200px;
+    animation: reveal 1s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 70%;
+}
+
+@keyframes reveal {
+    100% {
+        width: 100%;
+    }
+}
+
+/* typewriter effect */
+h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}

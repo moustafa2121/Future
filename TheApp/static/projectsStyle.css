@@ -1,16 +1,12 @@
-main {
-    margin: 0 1vw !important;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
+    width:80vw;
     text-align: left;
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
     z-index: 5 !important;
-    padding-bottom: 30px;
+    padding: 20px 0 30px 0;
     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    border:1px solid black;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -42,7 +38,7 @@ main {
     height: 25px;
     right: -12px;
     background-color: white;
-    border: 4px solid #800020;
+    border: 4px solid green;
     top: 15px;
     border-radius: 50%;
     z-index: 6 !important;
@@ -95,8 +91,8 @@ main {
 .content {
     padding: 20px 30px;
     position: relative;
-    border-radius: 10px;
     border: 2px solid gray;
+    border-bottom: 7px solid darkgreen;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -130,6 +126,11 @@ main {
     .right {
         left: 0%;
     }
+}
+
+h2{
+    text-decoration:underline;
+    text-decoration-color:green;
 }
 
 h4 {

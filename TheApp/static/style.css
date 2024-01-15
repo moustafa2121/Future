@@ -2,29 +2,33 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #f5f5f5;
+    background: linear-gradient(#f9f6f2, #e0e5eb);
 }
 
+/* header */
 header {
-    background-color: inherit;
-    border-bottom: 1px solid black;
+    background-color: #f9f6f2;
+    border: 1px solid black;
+    border-top: none;
     position: fixed !important;
     top: 0px !important;
-    width: 96vw;
-    margin: 0 1vw;
-    padding: 12px 0px;
+    width: 80vw;
+    margin: 0 10vw;
     transition: 0.4s;
     z-index: 10 !important;
+    color: black !important;
 }
-
+.navbar, .navbar >a{
+    padding:2px !important;
+}
 /* logo */
 header a > img {
     width: auto;
-    max-height: 50px;
-    margin-left: 15px;
+    max-height: 18vh;
     transition: 0.4s;
-    position:fixed;
-    top:5px;
+    position:relative;
+    top:0;
+    padding-left:1vw;
 }
 /* nav items */
 header ul{
@@ -48,7 +52,7 @@ header ul .nav-item:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: black;
+    background: green;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -57,83 +61,34 @@ header ul .nav-item:hover:after {
     left: 0;
 }
 
+/* main */
 main {
-    position:relative;
+    position: relative;
     margin: 0 10vw;
-    text-align:center;
-    top:18vh;
-    z-index:1 !important;
-}
-.mainPageArticle {
-    background-color: #e6e6e6;
-    min-height: 40vh;
-    width: 100%;
-    margin: 50px 0;
-    padding: 20px 20px;
-    border-radius: 10px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-}
-.textContainer {
-    display: inline-block;
-    color:black;
-}
-.textContainer h1{
+    width:80vw;
     text-align: center;
+    top: 18vh;
+    bottom:550px;
+    z-index: 1 !important;
 }
-.textContainer p{
-    font: 14px/1.4 'Open Sans', arial, sans-serif;
-    text-align: left;
-}
-.imgContainer {
-    display: flex;
-    justify-content: flex-end;
-}
-.imgContainer > img{
-    margin: auto;
-    object-fit: cover;
-    object-position: 100% 0;
-    width: 0;
-    height: 200px;
-    animation: reveal 1s;
-	animation-fill-mode: forwards;
-    border-radius:10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity:70%;
-}
-@keyframes reveal {
-    100% {
-        width: 100%;
-    }
-}
-.aboutPageArticle {
-    padding: 20px 20px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin: 25px 0;
-}
-.aboutPageArticle *{
-    color: black;
 
-}
-.aboutPageArticle ul {
-    text-align: left;
-}
+/* footer */
 footer {
     display: block;
     border: 1px solid black;
     width: 100vw !important;
-    margin: 150px 0 0 0;
+    margin: 20vh 0 0 0;
     padding: 0 10vw 0 5vw;
-    bottom: 0;
+    bottom: 0 !important;
     background-color: black;
     color: white !important;
     z-index:1000 !important;
 }
-footer p{
-
+footer ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-top: 1%;
 }
 footer a{
     color: white !important;
@@ -142,14 +97,12 @@ footer a{
     text-underline-offset:3px;
 }
 
-
+/* pulsing for list */
 ul {
     font: calc(1rem + 4vmin) "Rubik Moonrocks";
     list-style: none;
     font-size:1.2em;
 }
-
-/* pulsing for list */
 ul.pulsing > li::before {
     content: "⚙️";
     transform: scale(0.2);
@@ -195,4 +148,19 @@ ul.pulsing > li:nth-child(10)::before {
   to {
     transform: scale(0.69);
   }
+}
+
+
+
+/* reveal effect*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

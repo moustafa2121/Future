@@ -4,6 +4,8 @@
     gap: 10px;
     justify-content:center;
     padding-bottom:10vh;
+    border:1px solid black;
+    padding-top: 30px;
 }
 
 .gallery-item {
