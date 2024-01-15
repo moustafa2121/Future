@@ -1,0 +1,44 @@
+@media only screen and (max-device-width: 750px) {
+    header, main {
+        width: 100vw;
+        margin: 0;
+    }
+    .parralexTextContainer{
+        padding:20px !important;
+    }
+}
+
+@media only screen and (max-device-width: 650px) {
+    header * {
+        font-size: 0.9em
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    footer li {
+        padding-bottom: 7px;
+    }
+    article.gridContainer {
+        grid-template-columns: repeat(1, 3fr);
+    }
+}
+@media only screen and (max-device-width: 500px) {
+    p {
+        font-size: 1em !important;
+    }
+
+    li {
+        font-size: 0.9em !important;
+    }
+
+    ul {
+        padding-left: 5px;
+    }
+    .aboutPageArticle h1, .gridContainer h3 {
+        font-size:1.2em
+    }
+}
+

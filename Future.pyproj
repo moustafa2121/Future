@@ -48,6 +48,7 @@
     <Content Include="TheApp\static\contactStyle.css" />
     <Content Include="TheApp\static\galleryStyle.css" />
     <Content Include="TheApp\static\mainJS.js" />
+    <Content Include="TheApp\static\mediaQueries.css" />
     <Content Include="TheApp\static\parallaxStyle.css" />
     <Content Include="TheApp\static\projectsStyle.css" />
     <Content Include="TheApp\static\style.css" />

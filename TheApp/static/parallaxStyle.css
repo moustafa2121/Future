@@ -4,6 +4,9 @@
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
 }
+.parralexTextContainer {
+    padding: 50px 80px;
+}
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
@@ -48,18 +51,22 @@ h3 {
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
-    font-size:1.8em;
+    font-size: 1.8em;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: darkolivegreen;
+    text-underline-offset:3px;
 }
 p, li {
     font: 20px "Lato", sans-serif;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+/*@media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-}
+}*/
 
 /* typewriter effect */
 h3{
