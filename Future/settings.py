@@ -1,5 +1,9 @@
 import os
 import posixpath
+from threading import local
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +31,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'Future.urls'
@@ -95,9 +100,13 @@ CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 SECRET_KEY = '=9#$j&-7z&nm03*&8(4+$#^&&@j&jjn&oe#lh3x)$7wvis=se9'
 
-DEBUG = False
+DEBUG = True
 
-# ALLOWED_HOSTS = ["futuresolutions-co.com", "localhost", "127.0.0.1"]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
+
+
+django_heroku.settings(locals())
